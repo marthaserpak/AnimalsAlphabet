@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Animals\'Alphabet</string>
+    <string name="welcome_text">Привет, малыш!      Выбери животное:</string>
+    <string name="discover">Узнать!</string>
+</resources>
