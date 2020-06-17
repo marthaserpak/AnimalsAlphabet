@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
@@ -7,53 +7,106 @@
     android:background="#14FFEA00"
     android:gravity="center_horizontal"
     android:paddingLeft="16dp"
-    android:paddingTop="25dp"
-    android:paddingRight="16dp">
+    android:paddingTop="10dp"
+    android:paddingRight="16dp"
+    android:paddingBottom="16dp"
+    android:weightSum="100"
+    android:orientation="vertical">
 
-    <TextView
-        android:id="@+id/welcomeText"
-        style="@android:style/Widget.DeviceDefault.TextView.SpinnerItem"
-        android:layout_width="272dp"
-        android:layout_height="81dp"
-        android:ellipsize="none"
-        android:fontFamily="serif"
-        android:text="@string/welcome_text"
-        android:textSize="30sp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintHorizontal_bias="0.495"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.025" />
+    <RelativeLayout
+        android:id="@+id/first_layout"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="40">
 
-    <NumberPicker
-        android:id="@+id/animalPicker"
-        android:layout_width="168dp"
-        android:layout_height="222dp"
-        android:layout_below="@+id/welcomeText"
-        android:layout_marginTop="64dp"
-        android:paddingBottom="30dp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/welcomeText" />
+        <TextView
+            android:id="@+id/welcomeText"
+            style="@android:style/Widget.DeviceDefault.TextView.SpinnerItem"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:layout_alignEnd="@+id/button_discover"
+            android:layout_alignRight="@+id/button_discover"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="0dp"
+            android:layout_marginEnd="-60dp"
+            android:layout_marginRight="-60dp"
+            android:fontFamily="serif"
+            android:text="@string/welcome_text"
+            android:textSize="15sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintHorizontal_bias="0.015"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.009" />
 
-    <Button
-        android:id="@+id/button_discover"
-        style="@android:style/Widget.Button.Toggle"
-        android:layout_width="98dp"
-        android:layout_height="62dp"
-        android:layout_centerVertical="true"
-        android:layout_marginBottom="76dp"
-        android:background="#E9FFEB0F"
-        android:fontFamily="serif"
-        android:gravity="center"
-        android:onClick="discover"
-        android:text="@string/discover"
-        android:textAppearance="@style/TextAppearance.AppCompat.Body1"
-        android:textSize="16sp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.498"
-        app:layout_constraintStart_toStartOf="parent" />
+        <NumberPicker
+            android:id="@+id/animalPicker"
+            android:layout_width="187dp"
+            android:layout_height="212dp"
+            android:layout_below="@+id/welcomeText"
+            android:layout_marginTop="7dp"
+            android:layout_marginEnd="31dp"
+            android:layout_marginRight="31dp"
+            android:layout_toStartOf="@+id/button_discover"
+            android:layout_toLeftOf="@+id/button_discover"
+            android:paddingBottom="30dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.208"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/welcomeText"
+            app:layout_constraintVertical_bias="0.181" />
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+        <Button
+            android:id="@+id/button_discover"
+            style="@android:style/Widget.Button.Toggle"
+            android:layout_width="91dp"
+            android:layout_height="46dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="60dp"
+            android:layout_marginBottom="88dp"
+            android:background="#E9FFEB0F"
+            android:fontFamily="serif"
+            android:gravity="center"
+            android:onClick="discover"
+            android:text="@string/discover"
+            android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+            android:textSize="16sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.881"
+            app:layout_constraintStart_toStartOf="parent" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="60"
+        android:paddingTop="12dp">
+
+
+        <ImageView
+            android:id="@+id/imageLetters"
+            android:layout_width="270dp"
+            android:layout_height="250dp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_gravity="center"
+            android:layout_marginLeft="3dp"
+            android:layout_marginTop="56dp" />
+
+        <Button
+            android:layout_width="55dp"
+            android:layout_height="88dp"
+            android:layout_below="@id/imageLetters"
+            android:layout_alignParentRight="true"
+            android:layout_gravity="bottom"
+            android:layout_marginTop="-91dp"
+            android:layout_marginRight="4dp"
+            android:text="just Button" />
+
+    </RelativeLayout>
+</LinearLayout>

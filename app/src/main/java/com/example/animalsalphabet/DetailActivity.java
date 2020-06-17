@@ -22,7 +22,7 @@ public class DetailActivity extends AppCompatActivity {
         int imgLtrA = getIntent().getIntExtra("imgLtrA", 0);
         imageView.setImageResource(imgLtrA);
 
-       /* Intent ltrB = getIntent();
+        Intent ltrB = getIntent();
         ltrB.getExtras();
         int imgLtrB = getIntent().getIntExtra("imgLtrB", 0);
         imageView.setImageResource(imgLtrB);
@@ -43,7 +43,7 @@ public class DetailActivity extends AppCompatActivity {
         int imgLtrE = getIntent().getIntExtra("imgLtrE", 0);
         imageView.setImageResource(imgLtrE);
 
-        Intent ltrF = getIntent();
+      /*  Intent ltrF = getIntent();
         ltrF.getExtras();
         int imgLtrF = getIntent().getIntExtra("imgLtrF", 0);
         imageView.setImageResource(imgLtrF);

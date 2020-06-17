@@ -1,5 +1,5 @@
 <resources>
     <string name="app_name">Animals\'Alphabet</string>
-    <string name="welcome_text">Hi, little learners!\n    Pick an animal:</string>
+    <string name="welcome_text">Hi, children! Pick an animal:</string>
     <string name="discover">Discover!</string>
 </resources>
