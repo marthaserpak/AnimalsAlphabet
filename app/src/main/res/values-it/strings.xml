@@ -2,5 +2,6 @@
 <resources>
     <string name="app_name">Animals\'Alphabet</string>
     <string name="welcome_text">Ciao bambino!     Scegli un animale:</string>
-    <string name="discover">Scoprire!</string>
+    <string name="discover">" Mostrare"</string>
+    <string name="show">" Mostrare!"</string>
 </resources>
