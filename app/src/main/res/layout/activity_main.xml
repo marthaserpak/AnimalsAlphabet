@@ -1,17 +1,16 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#14FFEA00"
+    android:background="#19B2EBF2"
     android:gravity="center_horizontal"
+    android:orientation="vertical"
     android:paddingLeft="16dp"
     android:paddingTop="10dp"
     android:paddingRight="16dp"
     android:paddingBottom="16dp"
-    android:weightSum="100"
-    android:orientation="vertical">
+    android:weightSum="100">
 
     <RelativeLayout
         android:id="@+id/first_layout"
@@ -27,7 +26,7 @@
             android:layout_alignEnd="@+id/button_show"
             android:layout_alignRight="@+id/button_show"
             android:layout_alignParentLeft="true"
-            android:layout_marginLeft="0dp"
+
             android:layout_marginEnd="-60dp"
             android:layout_marginRight="-60dp"
             android:fontFamily="serif"
@@ -45,9 +44,9 @@
             android:layout_width="213dp"
             android:layout_height="206dp"
             android:layout_below="@+id/welcomeText"
-            android:layout_marginTop="13dp"
-            android:layout_marginEnd="22dp"
-            android:layout_marginRight="22dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginEnd="24dp"
+            android:layout_marginRight="24dp"
             android:layout_toStartOf="@+id/button_show"
             android:layout_toLeftOf="@+id/button_show"
             android:paddingBottom="30dp"
@@ -90,8 +89,10 @@
             android:layout_toStartOf="@+id/button_show"
             android:layout_toLeftOf="@+id/button_show"
             android:background="#E9FFEB0F"
-            android:text="@string/audio" />
-
+            android:fontFamily="serif"
+            android:text="@string/audio"
+            android:textSize="16sp"
+            android:onClick="audioActivity"/>
 
     </RelativeLayout>
 
@@ -101,7 +102,6 @@
         android:layout_weight="60"
         android:paddingTop="12dp">
 
-
         <ImageView
             android:id="@+id/imageLetters"
             android:layout_width="match_parent"
@@ -109,9 +109,9 @@
             android:layout_alignParentLeft="true"
             android:layout_alignParentTop="true"
             android:layout_gravity="center"
-            android:layout_marginLeft="0dp"
-            android:layout_marginTop="56dp" />
-
+            android:layout_marginLeft="2dp"
+            android:layout_marginTop="17dp" />
 
     </RelativeLayout>
+
 </LinearLayout>

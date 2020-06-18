@@ -113,4 +113,10 @@ public class MainActivity extends AppCompatActivity {
             imageAnimal.setImageResource(R.drawable.ltr_z);
         }
     }
+
+
+    public void audioActivity(View view) {
+        Intent SecondActivity = new Intent(getApplicationContext(), AudioActivity.class);
+        startActivity(SecondActivity);
+    }
 }

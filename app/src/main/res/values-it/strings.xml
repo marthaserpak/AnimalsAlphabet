@@ -1,7 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <string name="app_name">Animals\'Alphabet</string>
-    <string name="welcome_text">Ciao bambino!     Scegli un animale:</string>
-    <string name="discover">" Mostrare"</string>
+    <string name="welcome_text">Ciao bambino! Scegli una lettera:</string>
     <string name="show">" Mostrare!"</string>
+    <string name="audio">" Audio"</string>
+    <string name="listen_repeat">Ascolta e ripeti!</string>
+    <string name="letter_a">letter \"Aa\"</string>
+    <string name="share">" Condividi app"</string>
 </resources>
