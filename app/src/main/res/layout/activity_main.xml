@@ -31,7 +31,7 @@
             android:layout_marginRight="-60dp"
             android:fontFamily="serif"
             android:text="@string/welcome_text"
-            android:textSize="24sp"
+            android:textSize="20sp"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintHorizontal_bias="0.015"
             app:layout_constraintLeft_toLeftOf="parent"

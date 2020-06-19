@@ -5,7 +5,7 @@
     <string name="audio">audio</string>
     <string name="listen_repeat">Listen and repeat!</string>
     <!--<string name="share">Share App</string>-->
-    <string name="letter_a">letter \"A\"</string>
+    <string name="letter_a" translatable="false">letter \"A\"</string>
     <string name="letter_b" translatable="false">letter \"B\"</string>
     <string name="letter_c" translatable="false">letter \"C\"</string>
     <string name="letter_d" translatable="false">letter \"D\"</string>

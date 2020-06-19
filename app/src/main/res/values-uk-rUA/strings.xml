@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Абетка Тварин</string>
+    <string name="welcome_text">Вітаю! Вибери букву:</string>
+    <string name="show">Показати!</string>
+    <string name="audio">Аудіо</string>
+    <string name="listen_repeat">Послухай і повтори!</string>
+    <string name="share">Поділитися додатком</string>
+    <string name="btn_abcSong">ABC пісня</string>
+</resources>
