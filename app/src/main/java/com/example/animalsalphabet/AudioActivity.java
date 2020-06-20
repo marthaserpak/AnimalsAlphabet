@@ -3,26 +3,22 @@ package com.example.animalsalphabet;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
-import android.media.Image;
 import android.media.MediaPlayer;
 import android.net.Uri;
 import android.os.Bundle;
 import android.view.View;
-import android.widget.Button;
-import android.widget.ImageView;
 
-import java.lang.reflect.Array;
+
+
 
 public class AudioActivity extends AppCompatActivity {
 
     MediaPlayer lettersPronunciation;
-    Button btn_share;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_audio);
-        btn_share = findViewById(R.id.btn_share);
         lettersPronunciation = MediaPlayer.create(getApplicationContext(), R.raw.alphabet_song);
     }
 
