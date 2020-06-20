@@ -27,7 +27,8 @@ public class AudioActivity extends AppCompatActivity {
     }
 
     public void btn_audio(View view) {
-        lettersPronunciation.isPlaying();
+
+        lettersPronunciation.start();
     }
 
     public void shareApp(View view) {
